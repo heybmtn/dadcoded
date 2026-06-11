@@ -1,0 +1,200 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dadcoded</title>
+
+<style>
+:root {
+  --bg: #fff;
+  --text: #111;
+  --muted: #6f6f6f;
+  --border: #ececec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 56px 24px 120px;
+}
+
+/* Top mark */
+.logo {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 110px;
+}
+
+/* HERO */
+.hero {
+  margin-bottom: 140px;
+}
+
+.hero h1 {
+  font-size: clamp(3.6rem, 9vw, 7.2rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.hero p {
+  font-size: 1.35rem;
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.5;
+}
+
+/* SECTION LABELS */
+.section-title {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 26px;
+}
+
+/* PROJECTS */
+.projects {
+  margin-top: 20px;
+}
+
+.project {
+  padding: 28px 0;
+  border-top: 1px solid var(--border);
+}
+
+.project:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.project h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+
+.project p {
+  color: var(--muted);
+  max-width: 620px;
+  line-height: 1.55;
+  font-size: 1.05rem;
+}
+
+/* CONTACT (intentional CTA feel) */
+.contact {
+  margin-top: 150px;
+}
+
+.contact p {
+  color: var(--muted);
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+
+.contact a {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 140px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+/* MOBILE TUNING */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3.4rem;
+  }
+
+  .hero p {
+    font-size: 1.15rem;
+  }
+
+  .project h2 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo">
+    DADCODED
+  </div>
+
+  <section class="hero">
+    <h1>
+      I make things<br>
+      with AI.
+    </h1>
+
+    <p>
+      Building useful products, automating boring work, and turning ideas into software.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-title">Projects</div>
+
+    <div class="projects">
+
+      <div class="project">
+        <h2>Front Door Outreach</h2>
+        <p>
+          Outreach for small businesses and makers without the cost or complexity of email infrastructure.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="section-title">Contact</div>
+    <p>Want to build something together?</p>
+    <a href="mailto:hello@dadcoded.uk">hello@dadcoded.uk</a>
+  </section>
+
+  <footer>
+    DadCoded
+  </footer>
+
+</div>
+
+</body>
+</html>
+```
